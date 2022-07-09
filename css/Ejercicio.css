@@ -30,12 +30,12 @@ h2 {
 
 .robot svg {
   position: absolute;
-  top: 24%;
+  top: 9%;
   left: 50%;
   display: block;
   margin: 0 auto;
   margin-left: -300px;
-  transform: scale(0.58) translate(0, -100%);
+  transform: scale(0.45) translate(0, -100%);
   transform-origin: center;
   height: 800px;
   width: 600px;
