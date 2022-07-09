@@ -1,0 +1,167 @@
+/*CSS contactanos Segunda clase */
+
+p {
+    color: darkblue;
+    background-color: rgb(255, 150, 0); 
+    /*border: 5px solid red; forma rapida */
+    border-width: 5px;
+    border-color: chartreuse;
+    border-style: groove;
+    /*margin: 35px; afecta todo los lados*/
+    /*margin: 0 50px; afecta horizontalmente o verticalmente*/
+    /*margin: 50px 0 50px 100px;*/
+    padding: 35px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    text-shadow: 1px 1px 5px red;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    /*display: inline;*/
+    position: sticky; /* posicion del elemento, donde se ubica en la pantalla*/
+
+}
+/*
+h1{
+    display: inline;
+}
+*/
+body {
+    background-color: rgba(237, 12, 12, 0.52);
+    color: #3131c4;
+}
+
+.example{
+    
+    display: grid;
+    /*justify-content: center;*/
+    justify-items: center;/* Justify Horizontal*/
+    /*align-content: center;*/
+    align-items: center;/* align vertical*/
+    text-align: center;
+    
+}
+
+/* Pseudo Clases */
+button:hover {
+  background: red;
+}
+/* Pagina sin visitar*/
+a:link {
+  color: blueviolet;
+  font-size: 30px;
+}
+
+/* Pagina visitada*/
+a:visited {
+  color: white;
+  font-size: 50px;
+}
+/*Click en el enlace*/
+a:active{
+  color: deeppink;
+  font-size: 100px;
+}
+
+a:hover {
+  color: black;
+}
+/* Pseudo elementos(Modificar una parte especifica de un HTML*/
+/*Primera letra del elemento*/
+p::first-letter{
+  font-size: 50px;
+}
+/*Primera linea del elemento*/
+p::first-line{
+  color: cadetblue;
+}
+
+/*Transiciones*/
+button{
+  width: 100px;
+  height: 100px;
+  transition: width 10s, height 5s;
+
+}
+
+button:hover{
+  width: 800px;
+  height: 500px;
+}
+
+/*Animaciones*/
+.example{
+  background-color: red;
+  animation-name: ejemplo;
+  animation-duration: 5s;
+}
+
+@keyframes ejemplo {
+  from {background-color: red;}
+  to {background-color: orange;}
+}
+
+#animacion{
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-color: chartreuse;
+  animation-name: moverse;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moverse {
+  0%{right: 0px; top: 0px; background-color: chartreuse;}
+  25%{right: 200px; top: 0px;background-color: red;}
+  50%{right: 200px; top: 200px;background-color: blue;}
+  75%{right: 500px; top: 200px;background-color: black;}
+  100%{right: 0px; top: 0px;background-color: blueviolet;}
+
+
+}
+
+/*Decoracion del texto del LINK*/
+a{
+  text-decoration: none;
+}
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .example {background: red;
+    grid-template-columns: 1fr;}
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 601px) {
+    .example {background: green;
+    grid-template-columns: 1fr;}
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .example {background: blue;
+    grid-template-columns: 1fr 1fr;}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .example {background: orange;}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .example {background: pink;
+    }
+
+  
+  
+  
+  }
+
